@@ -9,7 +9,15 @@ python-dotenv
 psycopg2
 sqlalchemy
 requests
+# For AI models
 openai
+transformers
+sentencepiece
+accelerate
+torch
+torchvision
+torchaudio
+tensorflow
 # This might resolve the extension load issue:
 # Unable to load extension: pydevd_plugins.extensions.types.pydevd_plugin_pandas_types
 #magicgui==0.3.7

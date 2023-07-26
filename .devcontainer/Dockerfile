@@ -1,7 +1,8 @@
 FROM ubuntu:latest
 
 RUN apt-get update && \
-  apt-get install -y git zsh curl python3 python3-pip build-essential ca-certificates libpq-dev postgresql-client && \
+  apt-get install -y git zsh curl python3 python3-pip build-essential \
+  ca-certificates libpq-dev postgresql-client ffmpeg && \
   curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash && \
   export NVM_DIR="$HOME/.nvm" && \
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && \
