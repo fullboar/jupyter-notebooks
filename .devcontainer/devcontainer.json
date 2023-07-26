@@ -6,7 +6,9 @@
   "service": "jupyter",
   "runArgs": [
     "--env-file",
-    ".devcontainer/devcontainer.env"
+    ".devcontainer/devcontainer.env",
+    "--tmpfs",
+    "/tmp:rw,size=128m"
   ],
   "workspaceFolder": "/w",
   "customizations": {
@@ -26,6 +28,11 @@
         "vscode-icons-team.vscode-icons",
         "wayou.vscode-todo-highlight"
       ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+      "installCudnn": true
     }
   }
 }
